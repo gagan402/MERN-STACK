@@ -56,8 +56,6 @@ const startTimer=()=>{
 
 
 
-
-
 // function stopTimer(ref)
 // {
 //     clearInterval(ref);
