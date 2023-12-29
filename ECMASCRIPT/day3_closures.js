@@ -16,7 +16,7 @@ getConnection()();
 //this is called closure  
 //a closure is the combination of a function bundled together(enclosed) with reference to its surrounding state (the lexical environment)
 //in other words, a closure gives you access to an outer function's scope from an inner function 
-//we are having control over local variabled of function until we are having control over inner functions of function
+//we are having control over local variables of function until we are having control over inner functions of function
 */
 
 
