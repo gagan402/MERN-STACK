@@ -43,7 +43,7 @@ console.log("**"+position);
 
 
 
-//only traverse the arrat
+//only traverse the array
 //for each loop
 ls.forEach((str)=>{
     console.log(str);
@@ -91,17 +91,18 @@ var gj=[
 ];
 
 /*
-var cseData=gj.filter((obj)=>obj.branch=="cse" && obj.per>="90");
+var cseData=gj.filter((obj)=>obj.branch=="cse" && obj.per>=90);
 console.log(cseData);
 
 //it only return object it do not return any particular properties 
+
 var d=gj.filter(
     (ggn)=>
     {
         if(ggn.branch=="cse")
         {
-            // return ggn.name;//it will return whole object
-            return ggn;
+            return ggn.name;//it will return whole object
+            // return ggn;
         }
     }
 );
@@ -115,7 +116,7 @@ console.log(d);
 //using map() array
 //it return something at every iteration
 //use when u want to process every data
-/* 
+/*
 var mm=gj.map((ggn)=>ggn.branch=="cse");
  console.log(mm);
 
@@ -145,15 +146,15 @@ console.log(gj);
 
 
 
+
 */
 
 
 
-
-///=======================================
+//=======================================
 //sort array
 //it sort the original array also
-
+/*
 var ss=gj.sort((o1,o2)=>
 {
     if(o1.branch>o2.branch)
@@ -167,3 +168,14 @@ var ss=gj.sort((o1,o2)=>
 
 console.log(ss);
 console.log(gj);
+
+*/
+//names of those students who got marks more than 90
+var nn=gj.filter((g)=>{
+    if(g.per>90)
+    {
+        return {"name":g.name};
+    }
+})
+
+console.log(nn);

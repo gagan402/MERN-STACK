@@ -245,3 +245,6 @@ console.log(fun3(8,0));
 //here we can pass only single argument and it is invalid for more than one argument
 const fun4=r=>r*r;
 console.log(fun4(3));
+
+
+
